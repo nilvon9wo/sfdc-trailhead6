@@ -65,6 +65,26 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
+    <classAccesses>
+        <apexClass>HttpFormBuilder</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>JWT</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>JWTBearerFlow</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Vision</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VisionController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <custom>false</custom>
     <fieldPermissions>
         <editable>true</editable>
@@ -1505,6 +1525,10 @@
         <object>SocialPersona</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <pageAccesses>
+        <apexPage>Predict</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>

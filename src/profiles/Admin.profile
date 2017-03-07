@@ -65,6 +65,26 @@
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
+    <classAccesses>
+        <apexClass>HttpFormBuilder</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>JWT</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>JWTBearerFlow</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Vision</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VisionController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <custom>false</custom>
     <fieldPermissions>
         <editable>true</editable>
@@ -1676,6 +1696,10 @@
         <object>Supply__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+    <pageAccesses>
+        <apexPage>Predict</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
