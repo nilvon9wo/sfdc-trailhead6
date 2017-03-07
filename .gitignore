@@ -2,6 +2,7 @@
 .settings/
 .idea/
 apps/
+etc/einstein/predictive_services.pem
 etc/identity
 etc/soap/Exploring-Salesforce-SOAP-API-soapui-project.xml
 IlluminatedCloud/
