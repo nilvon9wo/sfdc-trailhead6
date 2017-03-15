@@ -59,11 +59,53 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <fields>
+        <fullName>AccountCreatedDateTime__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.CreatedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>AccountCreatedDateTime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
         <fullName>AccountId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Add_Years_to_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+    AND(
+       MONTH(Date__c) = 2,
+       DAY(Date__c) = 29,
+       NOT(
+           OR(
+              MOD(YEAR(Date__c), 400) = 0,
+              AND (
+                   MOD(YEAR(Date__c), 4) = 0,
+                   MOD(YEAR(Date__c), 100) != 0
+              )
+           )
+       )
+    ),
+    DATE(YEAR(Date__c) + Number_of_Years__c, 3, 1),
+    DATE(
+         YEAR(Date__c) + Number_of_Years__c,
+         MONTH(Date__c), 
+         DAY(Date__c)
+    )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Add Years to Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
     </fields>
     <fields>
         <fullName>AssetId</fullName>
@@ -78,6 +120,56 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Business_Days_From_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>(5 * (FLOOR((TODAY() - DATE(1900, 1, 8)) / 7)) + MIN(5, MOD(TODAY() - DATE(1900, 1, 8), 7)))
+-
+(5 * (FLOOR((Date__c - DATE(1900, 1, 8)) / 7)) + MIN(5, MOD(Date__c - DATE(1900, 1, 8), 7)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Business Days From Date</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Age_in_Days__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY() - DATEVALUE(CreatedDate)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Age in Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Category__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+   (NOT(IsClosed)) &amp;&amp; (Case_Age_in_Days__c &gt; 20), 
+   &quot;RED&quot;,
+   IF(
+      (NOT(IsClosed)) &amp;&amp; (Case_Age_in_Days__c &gt; 10),
+      &quot;YELLOW&quot;,
+      &quot;GREEN&quot;
+   )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>ClosedDate</fullName>
@@ -111,6 +203,30 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Days_Since_Creation__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY() - DATEVALUE(CreatedDate)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days Since Creation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -129,6 +245,17 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Future_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY() + 3</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Future Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>IsClosedOnCreate</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -139,6 +266,81 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Last_Day_of_Date_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+   MONTH(Date__c) = 12,
+   DATE(YEAR(Date__c), 12, 31),
+   DATE(
+        YEAR(Date__c), 
+        MONTH(Date__c) + 1, 
+        1
+   ) - 1
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last Day of Date Month</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Last_Day_of_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+    MONTH( DATEVALUE(NOW()) ) = 12,
+    DATE( 
+         YEAR( DATEVALUE(NOW()) ), 12, 31 
+         ),
+    DATE( 
+         YEAR( DATEVALUE(NOW()) ), 
+         MONTH( DATEVALUE(NOW()) ) + 1, 
+         1
+    ) - 1
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last Day of Month</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>March_17_2015_1700__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATETIMEVALUE(&quot;2015-03-17 17:00:00&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>March_17_2015_1700</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>March_17_2015__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATE(2015,03,17)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>March_17_2015</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Years__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Years</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Origin</fullName>
@@ -190,6 +392,27 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Priority_Based_on_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Type,
+    &quot;Electrical&quot;, 1,
+    &quot;Electronic&quot;, 2,
+    &quot;Mechanical&quot;, 3,
+    &quot;Structural&quot;, 4,
+    &quot;Other&quot;, 5,
+    5
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Priority Based on Type</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Product__c</fullName>
@@ -250,6 +473,16 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Reason_for_Escalating__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for Escalating</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
         <fullName>SLAViolation__c</fullName>
         <externalId>false</externalId>
         <label>SLA Violation</label>
@@ -280,6 +513,18 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Status_Sentence__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;This case is &quot; &amp; TEXT(Status)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status Sentence</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Subject</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -300,6 +545,24 @@
     <fields>
         <fullName>SuppliedPhone</fullName>
         <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Three_Business_Days_From_Today__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+   MOD(TODAY() - DATE(1900, 1, 7), 7),
+   3, TODAY() + 5,
+   4, TODAY() + 5,
+   5, TODAY() + 5,
+   6, TODAY() + 4,
+   TODAY() + 3
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Three Business Days From Today</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
     </fields>
     <fields>
         <fullName>Type</fullName>
@@ -372,6 +635,35 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWriteTransfer</sharingModel>
+    <validationRules>
+        <fullName>Cannot_Change_Type_Back_to_Blank</fullName>
+        <active>true</active>
+        <description>Cannot change type back to blank</description>
+        <errorConditionFormula>NOT(ISPICKVAL(PRIORVALUE(Type), &quot;&quot;)) 
+&amp;&amp; ISPICKVAL(Type,&quot;&quot;)</errorConditionFormula>
+        <errorMessage>Cannot change type back to blank</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Escalation_Reason_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+   ISPICKVAL(Status, &quot;Escalated&quot;),
+   ISBLANK(Reason_for_Escalating__c)
+)</errorConditionFormula>
+        <errorMessage>Please enter a reason for changing the case status to Escalated.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Mark_as_Escalated</fullName>
+        <active>true</active>
+        <description>You can only set a case as escalated if it is high priority and not closed&apos; under the Escalated field when triggered.</description>
+        <errorConditionFormula>IsEscalated
+&amp;&amp; OR(
+   TEXT(Priority) != &quot;High&quot;,
+   TEXT(Status) = &quot;Closed&quot;
+)</errorConditionFormula>
+        <errorDisplayField>IsEscalated</errorDisplayField>
+        <errorMessage>You can only set a case as escalated if it is high priority and not closed&apos; under the Escalated field when triggered.</errorMessage>
+    </validationRules>
     <webLinks>
         <fullName>UpsellCrosssellOpportunity</fullName>
         <availability>online</availability>

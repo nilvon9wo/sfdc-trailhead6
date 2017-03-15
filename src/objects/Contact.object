@@ -129,8 +129,28 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Email_Host__c</fullName>
+        <externalId>false</externalId>
+        <formula>SUBSTITUTE(Email, LEFT(Email, FIND(&quot;@&quot;, Email)), &quot;www.&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Email Host</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Fax</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>FirstName &amp; &quot; &quot; &amp; LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Full Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>HasOptedOutOfEmail</fullName>
@@ -143,6 +163,18 @@
     <fields>
         <fullName>HomePhone</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Is_Executive__c</fullName>
+        <externalId>false</externalId>
+        <formula>OR ( 
+BEGINS(Title, &quot;Chief&quot;), 
+CONTAINS(Title, &quot;President&quot;), 
+CONTAINS(Title, &quot;Executive&quot;) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Executive</label>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Jigsaw</fullName>
@@ -222,6 +254,23 @@
     <fields>
         <fullName>Phone</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Priority__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Account.Rating,
+    &quot;Hot&quot;, 1,
+    &quot;Warm&quot;, IF(Is_Executive__c, 1, 2),
+    &quot;Cold&quot;, IF(Is_Executive__c, 2, 3),
+    3
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Priority</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>ReportsToId</fullName>

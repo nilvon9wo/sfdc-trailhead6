@@ -77,6 +77,15 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Account_Type_Explanation__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Type Explanation</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
         <fullName>Active__c</fullName>
         <externalId>false</externalId>
         <label>Active</label>
@@ -106,8 +115,72 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Billing_Region__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+   ISBLANK(BillingState), 
+   &quot;None&quot;,
+   IF(
+      CONTAINS(&quot;AK:AZ:CA:HA:NV:NM:OR:UT:WA&quot;, BillingState), 
+      &quot;West&quot;,
+      IF(
+         CONTAINS(&quot;CO:ID:MT:KS:OK:TX:WY&quot;, BillingState), 
+         &quot;Central&quot;,
+         IF(
+            CONTAINS(&quot;CT:ME:MA:NH:NY:PA:RI:VT&quot;, BillingState), 
+            &quot;East&quot;,
+            IF(
+               CONTAINS(&quot;AL:AR:DC:DE:FL:GA:KY:LA:MD:MS:NC:NJ:SC:TN:VA:WV&quot;, BillingState), 
+               &quot;South&quot;,
+               IF(
+                  CONTAINS(&quot;IL:IN:IA:MI:MN:MO:NE:ND:OH:SD:WI&quot;, BillingState), 
+                  &quot;North&quot;, 
+                  &quot;Other&quot;
+               )
+            )
+         )
+      )
+   )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Billing Region</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CleanStatus</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Contract_Activated_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Activated Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Status</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Activated</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>CustomerPriority__c</fullName>
@@ -140,6 +213,22 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Days_Since_Contract_Activated__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+    ISPICKVAL(Contract_Status__c, &quot;Activated&quot;),
+    TODAY() - Contract_Activated_Date__c,
+    null
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days Since Contract Activated</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -159,6 +248,16 @@
     <fields>
         <fullName>Jigsaw</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Link_to_Salesforce__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://www.salesforce.com&quot;, &quot;Salesforce&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Salesforce Link</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>NaicsCode</fullName>
@@ -379,6 +478,15 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Explanation_Required_for_Other_Types</fullName>
+        <active>true</active>
+        <description>Explanation Required for Other Account Types</description>
+        <errorConditionFormula>ISPICKVAL(Type, &quot;OTHER&quot;)
+&amp;&amp; ISBLANK(Account_Type_Explanation__c)</errorConditionFormula>
+        <errorDisplayField>Account_Type_Explanation__c</errorDisplayField>
+        <errorMessage>Explanation Required for Other Account Types</errorMessage>
+    </validationRules>
     <webLinks>
         <fullName>Billing</fullName>
         <availability>online</availability>

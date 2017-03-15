@@ -226,8 +226,16 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSO</field>
+            <label>Closed in Current Month</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhei</field>
             <label>Current Generator(s)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYuuG</field>
+            <label>Cylinder Volume</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CYs2e</field>
@@ -238,12 +246,32 @@
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYuuB</field>
+            <label>Height</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSE</field>
+            <label>Loss Reason</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhek</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSx</field>
+            <label>Opportunity Progress</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhel</field>
             <label>Order Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSs</field>
+            <label>Percent Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYuu6</field>
+            <label>Radius</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhem</field>
@@ -283,11 +311,18 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N0Y00000CYxSO</field>
             <field>00N0Y00000CJhei</field>
+            <field>00N0Y00000CYuuG</field>
             <field>00N0Y00000CYs2e</field>
             <field>00N0Y00000CJhej</field>
+            <field>00N0Y00000CYuuB</field>
+            <field>00N0Y00000CYxSE</field>
             <field>00N0Y00000CJhek</field>
+            <field>00N0Y00000CYxSx</field>
             <field>00N0Y00000CJhel</field>
+            <field>00N0Y00000CYxSs</field>
+            <field>00N0Y00000CYuu6</field>
             <field>00N0Y00000CJhem</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
@@ -443,8 +478,16 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSO</field>
+            <label>Closed in Current Month</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhei</field>
             <label>Current Generator(s)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYuuG</field>
+            <label>Cylinder Volume</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CYs2e</field>
@@ -455,12 +498,32 @@
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYuuB</field>
+            <label>Height</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSE</field>
+            <label>Loss Reason</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhek</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSx</field>
+            <label>Opportunity Progress</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhel</field>
             <label>Order Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSs</field>
+            <label>Percent Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYuu6</field>
+            <label>Radius</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhem</field>
@@ -500,11 +563,18 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N0Y00000CYxSO</field>
             <field>00N0Y00000CJhei</field>
+            <field>00N0Y00000CYuuG</field>
             <field>00N0Y00000CYs2e</field>
             <field>00N0Y00000CJhej</field>
+            <field>00N0Y00000CYuuB</field>
+            <field>00N0Y00000CYxSE</field>
             <field>00N0Y00000CJhek</field>
+            <field>00N0Y00000CYxSx</field>
             <field>00N0Y00000CJhel</field>
+            <field>00N0Y00000CYxSs</field>
+            <field>00N0Y00000CYuu6</field>
             <field>00N0Y00000CJhem</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
@@ -660,8 +730,16 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSO</field>
+            <label>Closed in Current Month</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhei</field>
             <label>Current Generator(s)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYuuG</field>
+            <label>Cylinder Volume</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CYs2e</field>
@@ -672,12 +750,32 @@
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYuuB</field>
+            <label>Height</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSE</field>
+            <label>Loss Reason</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhek</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSx</field>
+            <label>Opportunity Progress</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhel</field>
             <label>Order Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSs</field>
+            <label>Percent Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYuu6</field>
+            <label>Radius</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhem</field>
@@ -717,11 +815,18 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N0Y00000CYxSO</field>
             <field>00N0Y00000CJhei</field>
+            <field>00N0Y00000CYuuG</field>
             <field>00N0Y00000CYs2e</field>
             <field>00N0Y00000CJhej</field>
+            <field>00N0Y00000CYuuB</field>
+            <field>00N0Y00000CYxSE</field>
             <field>00N0Y00000CJhek</field>
+            <field>00N0Y00000CYxSx</field>
             <field>00N0Y00000CJhel</field>
+            <field>00N0Y00000CYxSs</field>
+            <field>00N0Y00000CYuu6</field>
             <field>00N0Y00000CJhem</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
@@ -877,8 +982,16 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSO</field>
+            <label>Closed in Current Month</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhei</field>
             <label>Current Generator(s)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYuuG</field>
+            <label>Cylinder Volume</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CYs2e</field>
@@ -889,12 +1002,32 @@
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYuuB</field>
+            <label>Height</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSE</field>
+            <label>Loss Reason</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhek</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSx</field>
+            <label>Opportunity Progress</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhel</field>
             <label>Order Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSs</field>
+            <label>Percent Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYuu6</field>
+            <label>Radius</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhem</field>
@@ -934,11 +1067,18 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N0Y00000CYxSO</field>
             <field>00N0Y00000CJhei</field>
+            <field>00N0Y00000CYuuG</field>
             <field>00N0Y00000CYs2e</field>
             <field>00N0Y00000CJhej</field>
+            <field>00N0Y00000CYuuB</field>
+            <field>00N0Y00000CYxSE</field>
             <field>00N0Y00000CJhek</field>
+            <field>00N0Y00000CYxSx</field>
             <field>00N0Y00000CJhel</field>
+            <field>00N0Y00000CYxSs</field>
+            <field>00N0Y00000CYuu6</field>
             <field>00N0Y00000CJhem</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
@@ -1102,8 +1242,16 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSO</field>
+            <label>Closed in Current Month</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhei</field>
             <label>Current Generator(s)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYuuG</field>
+            <label>Cylinder Volume</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CYs2e</field>
@@ -1114,12 +1262,32 @@
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYuuB</field>
+            <label>Height</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSE</field>
+            <label>Loss Reason</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhek</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSx</field>
+            <label>Opportunity Progress</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhel</field>
             <label>Order Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYxSs</field>
+            <label>Percent Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y00000CYuu6</field>
+            <label>Radius</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000CJhem</field>
@@ -1161,11 +1329,18 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N0Y00000CYxSO</field>
             <field>00N0Y00000CJhei</field>
+            <field>00N0Y00000CYuuG</field>
             <field>00N0Y00000CYs2e</field>
             <field>00N0Y00000CJhej</field>
+            <field>00N0Y00000CYuuB</field>
+            <field>00N0Y00000CYxSE</field>
             <field>00N0Y00000CJhek</field>
+            <field>00N0Y00000CYxSx</field>
             <field>00N0Y00000CJhel</field>
+            <field>00N0Y00000CYxSs</field>
+            <field>00N0Y00000CYuu6</field>
             <field>00N0Y00000CJhem</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>

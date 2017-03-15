@@ -66,6 +66,20 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>Closed_in_Current_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>NOT (
+   AND (
+      MONTH(CloseDate) = MONTH(TODAY()),
+      YEAR(CloseDate) = YEAR(TODAY())
+   )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Closed in Current Month</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>ContractId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
@@ -80,6 +94,19 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cylinder_Volume__c</fullName>
+        <externalId>false</externalId>
+        <formula>3.14159 * (Radius__c ^2) * Height__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cylinder Volume</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -145,6 +172,18 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>Height__c</fullName>
+        <externalId>false</externalId>
+        <label>Height</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>IsPrivate</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
@@ -154,6 +193,112 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Loss_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Loss Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Addison&apos;s disease (adrenal insufficiency)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cancer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Celiac disease</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Changes in diet or appetite</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Changes in sense of smell</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Changes in sense of taste</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cholecystitis (gallbladder inflammation)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>COPD (chronic obstructive pulmonary disease) and other lung diseases</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dementia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dental problems</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Depression (major depressive disorder)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Diabetes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Heart failure</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HIV/AIDS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hypercalcemia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hyperthyroidism (overactive thyroid)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hypothyroidism (underactive thyroid)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medications</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Parkinson&apos;s disease</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Peptic ulcer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Substance abuse (alcohol, cocaine, other)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tuberculosis</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ulcerative colitis</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>MainCompetitors__c</fullName>
@@ -177,6 +322,25 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>Opportunity_Progress__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+   Percent_Completed__c &gt; 75,
+   &quot;Late&quot;,
+   IF (
+       Percent_Completed__c &gt; 25,
+       &quot;Middle&quot;, 
+       &quot;Early&quot;
+   )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Progress</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>OrderNumber__c</fullName>
         <externalId>false</externalId>
         <label>Order Number</label>
@@ -194,6 +358,19 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Percent_Completed__c</fullName>
+        <externalId>false</externalId>
+        <formula>(TODAY() - DATEVALUE(CreatedDate))
+/ (CloseDate - DATEVALUE(CreatedDate))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Percent Completed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
         <fullName>Pricebook2Id</fullName>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -202,6 +379,18 @@
         <fullName>Probability</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Radius__c</fullName>
+        <externalId>false</externalId>
+        <label>Radius</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>StageName</fullName>
@@ -344,6 +533,19 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Loss_Reason_Required</fullName>
+        <active>true</active>
+        <description>Opportunities can’t be marked Closed Lost without providing a Loss Reason.</description>
+        <errorConditionFormula>AND(
+   $Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+   ISCHANGED(StageName),
+   ISPICKVAL(StageName, &quot;Closed Lost&quot;),
+   ISPICKVAL(Loss_Reason__c, &quot;&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>Loss_Reason__c</errorDisplayField>
+        <errorMessage>Opportunities can’t be marked Closed Lost without providing a Loss Reason.</errorMessage>
+    </validationRules>
     <webLinks>
         <fullName>DeliveryStatus</fullName>
         <availability>online</availability>
