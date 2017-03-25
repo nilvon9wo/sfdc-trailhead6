@@ -4,6 +4,7 @@
 apps/
 etc/einstein/predictive_services.pem
 etc/identity
+etc/mobile-apps/
 etc/soap/Exploring-Salesforce-SOAP-API-soapui-project.xml
 IlluminatedCloud/
 projectFilesBackup/

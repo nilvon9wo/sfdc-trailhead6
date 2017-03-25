@@ -116,6 +116,54 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Payment_Alert__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+   AND(
+       Payment_Due_Date__c &lt;TODAY(),
+       ISPICKVAL(Payment_Status__c, &quot;UNPAID&quot;)
+   ),
+   &quot;Payment overdue!&quot;,
+   null
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Payment Alert</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Status</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>UNPAID</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Paid</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Pricebook2Id</fullName>
         <trackHistory>true</trackHistory>
         <type>Lookup</type>
