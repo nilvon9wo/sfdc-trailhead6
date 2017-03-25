@@ -1779,6 +1779,10 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <pageAccesses>
+        <apexPage>MyIonicApp</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>Predict</apexPage>
         <enabled>false</enabled>
     </pageAccesses>

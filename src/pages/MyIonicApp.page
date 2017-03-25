@@ -1,0 +1,22 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false">
+    <html>
+        <head>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />        
+            <title>Contacts</title>
+            <link href="{!URLFOR($Resource.MyIonicApp, 'lib/ionic/css/ionic.css')}" rel="stylesheet" />
+        </head>
+        <body ng-app="starter">
+            <ion-nav-view></ion-nav-view>
+            <script src="{!URLFOR($Resource.MyIonicApp, 'lib/ionic/js/ionic.bundle.js')}"></script>
+            <script>
+                angular.module('config', [])
+                    .constant('forcengOptions', {accessToken: '{!$API.Session_ID}', useProxy:false})
+                    .constant('baseURL', "{!URLFOR($Resource.MyIonicApp, '/')}");
+            </script>
+            <script src="{!URLFOR($Resource.MyIonicApp, 'js/forceng.js')}"></script>
+            <script src="{!URLFOR($Resource.MyIonicApp, 'js/app.js')}"></script>            
+            <script src="{!URLFOR($Resource.MyIonicApp, 'js/controllers.js')}"></script>
+        </body>
+    </html>
+</apex:page>
