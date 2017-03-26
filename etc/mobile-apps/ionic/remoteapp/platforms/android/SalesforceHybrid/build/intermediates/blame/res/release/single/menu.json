@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\res\\merged\\release\\menu\\sf__login.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\menu\\sf__login.xml"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\res\\merged\\release\\menu\\sf__clear_custom_url.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\menu\\sf__clear_custom_url.xml"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SmartStore\\build\\intermediates\\res\\merged\\debug\\xml\\servers.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SmartStore\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\xml\\servers.xml"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SmartStore\\build\\intermediates\\res\\merged\\debug\\xml\\app_restrictions.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SmartStore\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\xml\\app_restrictions.xml"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SmartStore\\build\\intermediates\\res\\merged\\debug\\xml\\authenticator.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SmartStore\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\xml\\authenticator.xml"
+    }
+]

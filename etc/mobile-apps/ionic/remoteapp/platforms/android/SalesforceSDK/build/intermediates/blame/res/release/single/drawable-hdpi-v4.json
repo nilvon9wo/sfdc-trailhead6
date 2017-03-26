@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceSDK\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\sf__highlight_glare.png",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceSDK\\res\\drawable-hdpi\\sf__highlight_glare.png"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceSDK\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\sf__icon.png",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceSDK\\res\\drawable-hdpi\\sf__icon.png"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceSDK\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\sf__edit_icon.png",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceSDK\\res\\drawable-hdpi\\sf__edit_icon.png"
+    }
+]

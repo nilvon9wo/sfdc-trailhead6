@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\fa\\firstapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\sf__edit_icon.png",
+        "source": "D:\\fa\\firstapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\drawable-hdpi-v4\\sf__edit_icon.png"
+    },
+    {
+        "merged": "D:\\fa\\firstapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\sf__highlight_glare.png",
+        "source": "D:\\fa\\firstapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\drawable-hdpi-v4\\sf__highlight_glare.png"
+    },
+    {
+        "merged": "D:\\fa\\firstapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\sf__icon.png",
+        "source": "D:\\fa\\firstapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\drawable-hdpi-v4\\sf__icon.png"
+    }
+]

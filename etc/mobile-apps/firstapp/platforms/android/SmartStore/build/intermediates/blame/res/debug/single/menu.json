@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\fa\\firstapp\\platforms\\android\\SmartStore\\build\\intermediates\\res\\merged\\debug\\menu\\sf__clear_custom_url.xml",
+        "source": "D:\\fa\\firstapp\\platforms\\android\\SmartStore\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\menu\\sf__clear_custom_url.xml"
+    },
+    {
+        "merged": "D:\\fa\\firstapp\\platforms\\android\\SmartStore\\build\\intermediates\\res\\merged\\debug\\menu\\sf__login.xml",
+        "source": "D:\\fa\\firstapp\\platforms\\android\\SmartStore\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\menu\\sf__login.xml"
+    }
+]

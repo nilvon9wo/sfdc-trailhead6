@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\res\\merged\\release\\layout\\sf__login.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\layout\\sf__login.xml"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\res\\merged\\release\\layout\\sf__server_picker_list.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\layout\\sf__server_picker_list.xml"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\res\\merged\\release\\layout\\sf__custom_server_url.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\layout\\sf__custom_server_url.xml"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\res\\merged\\release\\layout\\sf__inspector_result_cell.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\exploded-aar\\android\\SmartStore\\unspecified\\res\\layout\\sf__inspector_result_cell.xml"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\res\\merged\\release\\layout\\sf__server_picker.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\layout\\sf__server_picker.xml"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\res\\merged\\release\\layout\\sf__inspector.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\exploded-aar\\android\\SmartStore\\unspecified\\res\\layout\\sf__inspector.xml"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\res\\merged\\release\\layout\\sf__account_switcher.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\layout\\sf__account_switcher.xml"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\res\\merged\\release\\layout\\sf__fingerprint_dialog.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\layout\\sf__fingerprint_dialog.xml"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\res\\merged\\release\\layout\\sf__manage_space.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\layout\\sf__manage_space.xml"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\res\\merged\\release\\layout\\sf__passcode.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SmartSync\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\layout\\sf__passcode.xml"
+    }
+]

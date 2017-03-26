@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceSDK\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\sf__icon.png",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceSDK\\res\\drawable-xxhdpi\\sf__icon.png"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceSDK\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\ic_fp_40px.png",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceSDK\\res\\drawable-xxhdpi\\ic_fp_40px.png"
+    }
+]

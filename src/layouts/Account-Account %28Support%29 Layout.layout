@@ -307,6 +307,14 @@
         <fields>PARTNER.ROLE</fields>
         <relatedList>RelatedPartnerList</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Description__c</fields>
+        <fields>Amount__c</fields>
+        <fields>Date_Time__c</fields>
+        <fields>Reimbursed__c</fields>
+        <relatedList>Expense__c.Client__c</relatedList>
+    </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <runAssignmentRulesDefault>false</runAssignmentRulesDefault>
     <showEmailCheckbox>true</showEmailCheckbox>

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml\\config.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\bundles\\debug\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml\\servers.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\xml\\servers.xml"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml\\app_restrictions.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\xml\\app_restrictions.xml"
+    },
+    {
+        "merged": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml\\authenticator.xml",
+        "source": "D:\\fa\\remoteapp\\platforms\\android\\SalesforceHybrid\\build\\intermediates\\exploded-aar\\android\\SalesforceSDK\\unspecified\\res\\xml\\authenticator.xml"
+    }
+]

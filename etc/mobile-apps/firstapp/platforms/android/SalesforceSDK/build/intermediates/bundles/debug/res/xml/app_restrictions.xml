@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<restrictions xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <restriction
+        android:description="@string/sf__app_service_hosts_description"
+        android:key="AppServiceHosts"
+        android:title="AppServiceHosts" />
+
+    <restriction
+        android:description="@string/sf__app_service_host_labels_description"
+        android:key="AppServiceHostLabels"
+        android:title="AppServiceHostLabels" />
+
+    <restriction
+        android:description="@string/sf__managed_app_oauth_id_description"
+        android:key="ManagedAppOAuthID"
+        android:title="ManagedAppOAuthID" />
+
+    <restriction
+        android:description="@string/sf__managed_app_callback_url_description"
+        android:key="ManagedAppCallbackURL"
+        android:title="ManagedAppCallbackURL" />
+
+    <restriction
+        android:defaultValue="false"
+        android:description="@string/sf__require_cert_auth_description"
+        android:key="RequireCertAuth"
+        android:title="RequireCertAuth" />
+
+    <restriction
+        android:description="@string/sf__managed_app_cert_alias_description"
+        android:key="ManagedAppCertAlias"
+        android:title="ManagedAppCertAlias" />
+
+    <restriction
+        android:defaultValue="false"
+        android:description="@string/sf__only_show_authorized_hosts_description"
+        android:key="OnlyShowAuthorizedHosts"
+        android:title="OnlyShowAuthorizedHosts" />
+</restrictions>

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\fa\\firstapp\\platforms\\android\\SalesforceSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\sf__toolbar_background.xml",
+        "source": "D:\\fa\\firstapp\\platforms\\android\\SalesforceSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\sf__toolbar_background.xml"
+    },
+    {
+        "merged": "D:\\fa\\firstapp\\platforms\\android\\SalesforceSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\sf__progress_spinner.xml",
+        "source": "D:\\fa\\firstapp\\platforms\\android\\SalesforceSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\sf__progress_spinner.xml"
+    },
+    {
+        "merged": "D:\\fa\\firstapp\\platforms\\android\\SalesforceSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\sf__header_bg.png",
+        "source": "D:\\fa\\firstapp\\platforms\\android\\SalesforceSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\sf__header_bg.png"
+    }
+]
