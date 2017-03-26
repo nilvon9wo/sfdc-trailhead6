@@ -10,4 +10,7 @@
             </div>
         </div>
     </div>
+    <div class="slds-col--padded slds-p-top--large">
+        <c:lce_form />
+    </div>
 </aura:application>
