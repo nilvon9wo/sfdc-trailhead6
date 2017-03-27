@@ -13,6 +13,10 @@
         <name>Amount__c</name>
     </fields>
     <fields>
+        <label><!-- Client Name --></label>
+        <name>Client_Name__c</name>
+    </fields>
+    <fields>
         <label><!-- Client --></label>
         <name>Client__c</name>
         <relationshipLabel><!-- Expenses --></relationshipLabel>
