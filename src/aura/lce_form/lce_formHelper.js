@@ -6,6 +6,7 @@
             expenseList.push(returnValue);
             component.set('v.expenseList', expenseList);
             this.updateTotal(component);
+            this.resetForm(component);
         });
     },
     
@@ -27,6 +28,17 @@
     
     isValidAmount: function (amountValue) {
         return (!(isNaN(amountValue) || amountValue === ''));
+    },
+    
+    resetForm: function(component) {
+        component.set('v.clientName', '');
+        component.set('v.newExpense', {
+            sobjectType: 'Expense__c',
+            Description__c: '',
+            Amount__c: 0,
+            Date_Time__c: '',
+            Reimbursed__c: false
+        });
     },
     
     updateTotal: function(component) {

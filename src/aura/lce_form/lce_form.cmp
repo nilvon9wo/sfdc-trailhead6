@@ -1,5 +1,7 @@
 <aura:component controller="LCE_ExpenseAuraCtrl" implements="force:appHostable">
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler name="updateExpense" event="c:lce_updateExpenseItem" action="{!c.updateEvent}" />
+    
     <aura:attribute name="clientName" type="String" />
     <aura:attribute name="expenseList" type="Expense__c[]" />
     <aura:attribute name="newExpense" type="Expense__c" 

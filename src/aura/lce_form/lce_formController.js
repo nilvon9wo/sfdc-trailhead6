@@ -14,5 +14,9 @@
     
 	doInit : function(component, event, helper) {
 		helper.getExpenses(component);
+	},
+    
+    updateEvent: function(component, event, helper) {
+		helper.upsertExpense(component, event.getParam('expense'));
 	}
 })
