@@ -1,0 +1,16 @@
+<aura:component controller="LCC_ContactAuraCtrl" implements="force:appHostable">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <aura:attribute name="contactList" type="Contact[]" />
+    
+    <ui:inputSelect aura:id="selection" change="{!c.select}">
+        <ui:inputSelectOption label="All Contacts" text="All Contacts"  />
+        <ui:inputSelectOption label="All Primary" text="All Primary"  />
+    </ui:inputSelect>
+    
+    <ui:button label="New Contact" press="{!c.createRecord}" />
+    
+    <aura:iteration var="contact" items="{!v.contactList}">
+        <c:lcc_contactItem contact="{!contact}" />
+    </aura:iteration>
+</aura:component>
