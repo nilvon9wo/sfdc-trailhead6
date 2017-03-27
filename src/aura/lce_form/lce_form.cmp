@@ -1,0 +1,88 @@
+<aura:component controller="LCE_ExpenseAuraCtrl" implements="force:appHostable">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="expenseList" type="Expense__c[]" />
+    <aura:attribute name="newExpense" type="Expense__c" 
+                    default="{
+                             sObjectType: 'Expense__c',
+                             Name: '',
+                             Description__c: '',
+                             Client__c: '',
+                             Amount__c: 0,
+                             Data_Time__c: '',
+                             Reimbursed__c: false
+                             }"/>
+    <aura:attribute name="totalExpenses" type="Double" default="0.00" />
+    <aura:attribute name="numberOfExpenses" type="Double" default="0" />
+    
+	<div class="container">
+        <form class="slds-form--stacked">
+            <div class="slds-form-element slds-is-required">
+                <div class="slds-form-element__control">
+                    <ui:inputText class="slds-input" labelClass="slds-form-element__label" 
+                                  aura:id="expense-description" label="Expense Description" 
+                                  value="{!v.newExpense.Description__c}" required="true" />
+                </div>
+            </div>
+            <div class="slds-form-element slds-is-required">
+                <div class="slds-form-element__control">
+                    <ui:inputNumber class="slds-input" labelClass="slds-form-element__label" 
+                                  aura:id="expense-amount" label="Amount" 
+                                  value="{!v.newExpense.Amount__c}" placeholder="20.80" required="true" />
+                </div>
+            </div>
+            <div class="slds-form-element">
+                <div class="slds-form-element__control">
+                    <ui:inputText class="slds-input" labelClass="slds-form-element__label" 
+                                  aura:id="expense-client" label="Client" 
+                                  value="{!v.newExpense.Client__c}" placeholder="ABC Co." />
+                </div>
+            </div>
+            <div class="slds-form-element">
+                <div class="slds-form-element__control">
+                    <ui:inputDateTime class="slds-input" labelClass="slds-form-element__label" 
+                                  aura:id="expense-data" label="Expense Date" 
+                                  value="{!v.newExpense.Date_Time__c}" displayDatePicker="true" />
+                </div>
+            </div>
+            <div class="slds-form-element">
+                <ui:inputCheckbox class="slds-checkbox" labelClass="slds-form-element__label" 
+                                  aura:id="expense-reimbursed" label="Reimbursed?" 
+                                  value="{!v.newExpense.Reimbursed__c}" />
+                <ui:button class="slds-button slds-button--neutral" labelClass="label"
+                           label="Submit" press="{!c.createExpense}" />
+            </div>
+        </form>
+    </div>
+    
+    <div class="container slds-p-top--medium">
+        <div class="row">
+            <div class="slds-tile">
+                <div class="{! 'slds-notify slds-notify--toast slds-theme--alert-texture' 
+                            	+ (v.total > 100 ? 'slds-theme--error ' : '')
+                            }">
+                    <p class="slds-tile__title slds-truncate">Total Expenses</p>
+                    $<ui:outputNumber class="slds-truncate" value="{!v.totalExpenses}" format=".00" />
+                </div>
+            </div>
+            <div class="slds-tile">
+                <div class="slds-notify slds-notify--toast slds-theme--alert-texture">
+                    <p class="slds-tile__title slds-truncate">No. of Expenses</p>
+                    <ui:outputNumber class="slds-truncate" value="{!v.numberOfExpenses}" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container slds-p-top--medium">
+        <div class="row" id="list">
+            <aura:iteration items="{!v.expenseList}" var="expense">
+                <p>{!expense.Name}, 
+                    {!expense.Description__c}, 
+                    {!expense.Client__c}, 
+                    {!expense.Amount__c}, 
+                    {!expense.Date_Time__c}, 
+                    {!expense.Reimbursed__c}
+                </p>
+            </aura:iteration>
+        </div>
+    </div>
+</aura:component>

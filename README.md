@@ -1,1 +1,0 @@
-# sfdc-trailhead6
