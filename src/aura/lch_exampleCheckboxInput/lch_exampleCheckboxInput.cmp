@@ -1,0 +1,9 @@
+<aura:component >
+	<fieldset>
+        <legend>Select your favourite color:</legend>
+        <lightning:input type="checkbox" label="Red" name="color1" value="1" aura:id="colors" />
+        <lightning:input type="checkbox" label="Blue" name="color2" value="2" aura:id="colors" />
+        <lightning:input type="checkbox" label="Green" name="color3" value="3" aura:id="colors" />
+    </fieldset>
+    <lightning:button label="Submit" onclick="{!c.submitForm}" />
+</aura:component>

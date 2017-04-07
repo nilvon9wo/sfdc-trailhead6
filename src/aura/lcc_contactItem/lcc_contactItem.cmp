@@ -1,0 +1,14 @@
+<aura:component >
+    <aura:attribute name="contact" type="Contact" />
+    <div class="{! 
+                	'row ' 
+                	+ ((v.contact.Level__c == 'Primary') ? 'primary' : '')
+                }" >
+        <div onclick="{!c.gotoRecord}">
+            <force:recordView recordId="{!v.contact.Id}" type="MINI" />
+        </div>
+        
+        <ui:button label="Edit" press="{!c.editRecord}" />
+        <ui:button label="View Cases" press="{!c.displayCaseList}" />
+    </div>
+</aura:component>

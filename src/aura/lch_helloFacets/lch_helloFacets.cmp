@@ -1,0 +1,11 @@
+<aura:component >
+	See how we set the header facet.
+    <c:lch_facetHeader >
+        <aura:set attribute="header">
+            Hello Header!
+        </aura:set>
+        <aura:set attribute="body">
+            Nice body!
+        </aura:set>
+    </c:lch_facetHeader>
+</aura:component>

@@ -1,0 +1,10 @@
+<aura:component access="global" implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="messageToSend" type="String" default="" />
+    <aura:attribute name="messageReceived" type="String" default="" />
+    <div>
+        <lightning:input name="messageToSend" value="{!v.messageToSend}" label="Message to send to Angular app:" />
+        <lightning:button label="Send" onclick="{!c.sendMessage}" />
+        <lightning:textArea name="messageReceived" value="{!v.messageReceived}" label="Message received from to Angular app:" />
+        <lightning:container aura:id="AngularApp" src="{!$Resource.SendReceiveMessges + '/index.html'}" onmessage="{!c.handleMessage}" />
+    </div>
+</aura:component>

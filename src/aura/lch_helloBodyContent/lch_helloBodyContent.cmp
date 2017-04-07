@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:set attribute="body">
+        <div>Body part</div>
+        <ui:button label="Push Me" />
+    </aura:set>
+</aura:component>

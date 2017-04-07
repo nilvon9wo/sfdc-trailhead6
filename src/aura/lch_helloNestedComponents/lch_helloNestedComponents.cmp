@@ -1,0 +1,7 @@
+<aura:component >
+    <aura:attribute name="passthrough" type="String" default="passed attribute" />
+	Observe!  Components within components!
+    <c:lch_helloHTML />
+    <c:lch_helloAttributes whom="{#v.passthrough}" />
+    <c:lch_helloAttributes whom="separate instance" />
+</aura:component>

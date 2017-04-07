@@ -1,0 +1,3 @@
+<aura:component >
+    <lightning:badge label="Label" />
+</aura:component>

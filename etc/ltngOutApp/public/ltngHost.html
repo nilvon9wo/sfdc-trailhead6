@@ -1,0 +1,25 @@
+<html>
+	<body>
+		<div id="lightningLocator"></div>
+		
+	
+		<!--  Lightning Out -->
+		<script src="https://th6-dev-ed.my.salesforce.com/lightning/lightning.out.js"></script>
+		<!--  Lightning Out with Guest Access-->
+		<script src="https://th6-developer-edition.eu11.force.com/ltng/lightning/lightning.out.js"></script>
+		
+		<script>
+			var communityEndpoint = 'https://th6-developer-edition.eu11.force.com/ltng';
+			$Lightning.use('c:locatorApp', lightningCallback, communityEndpoint);
+			
+			function lightningCallback() {
+				var locatorAttributes = {};
+				$Lightning.createComponent ('c.storeLocatorMain', locatorAttributes, 'locatorCallback');
+				
+				function locatorCallback(component) {
+					// TODO: When component is created and active on the page ...
+				}
+			}
+		</script>
+	</body>
+</html>

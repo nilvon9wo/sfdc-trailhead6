@@ -1,0 +1,4 @@
+<aura:component >
+    <lightning:icon iconName="action:approval" size="large" alternativeText="Indicates approval" />
+    <lightning:icon iconName="utility:error" variant="error" />
+</aura:component>

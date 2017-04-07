@@ -1,0 +1,8 @@
+<design:component label="Hello World">
+    <design:attribute name="toWhom" label="Subject" description="Name of the person you want to greet" />
+    <design:attribute name="greeting" label="Greeting" />
+    <sfdc:objects>
+    	<sfdc:object>Custom__c</sfdc:object>
+    	<sfdc:object>Opportunity</sfdc:object>
+    </sfdc:objects>
+</design:component>

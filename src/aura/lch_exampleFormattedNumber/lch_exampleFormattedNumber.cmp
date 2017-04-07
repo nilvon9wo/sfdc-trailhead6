@@ -1,0 +1,6 @@
+<aura:component >
+    <lightning:formattedNumber value="5000" style="currency" currencyCode="USD" />
+    <lightning:formattedNumber value="0.5" style="percent" />
+    <lightning:formattedNumber value="12.34" style="currency" currencyCode="EUR" />
+    <lightning:formattedNumber value="12.34" style="currency" currencyCode="USD" currencyDisplayAs="symbol" />
+</aura:component>

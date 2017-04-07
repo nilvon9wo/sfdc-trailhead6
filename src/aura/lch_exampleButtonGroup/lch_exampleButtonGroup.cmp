@@ -1,0 +1,7 @@
+<aura:component >
+	<lightning:buttonGroup >
+        <lightning:button label="Refresh" />
+        <lightning:button label="Edit" />
+        <lightning:button label="Save" />
+    </lightning:buttonGroup>
+</aura:component>
