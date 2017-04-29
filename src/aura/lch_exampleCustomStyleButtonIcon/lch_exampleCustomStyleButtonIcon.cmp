@@ -1,0 +1,3 @@
+<aura:component >
+    <lightning:buttonIcon iconName="utility:settings" variant="bare" alternativeText="Settings" iconClass="dark" />
+</aura:component>

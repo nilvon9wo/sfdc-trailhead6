@@ -1,10 +1,21 @@
 public class DB_ContactSelector extends fflib_SObjectSelector {
+	DB_AccountSelector accountSelector;
+	
+	public DB_ContactSelector(DB_AccountSelector accountSelector) {
+		this.accountSelector = accountSelector;
+	}
+
+	public DB_ContactSelector() {
+		this(new DB_AccountSelector());
+	}
 
     public List<Schema.SObjectField> getSObjectFieldList() {
         return new List<Schema.SObjectField>{
-                Contact.id, 
-                Contact.name, 
+                Contact.Account.name, 
+                Contact.Account.createdDate, 
+                Contact.id,
                 Contact.email, 
+                Contact.name, 
                 Contact.level__c,
                 Contact.mailingStreet, 
                 Contact.phone
@@ -29,5 +40,14 @@ public class DB_ContactSelector extends fflib_SObjectSelector {
                 .toSOQL()
         );
     }    
-    
+
+    public List<Contact> selectWithAccountByEmailList(List<String> emailList) {
+    	fflib_QueryFactory queryFactory = newQueryFactory();
+    	accountSelector.configureQueryFactoryFields(queryFactory, 'Account');
+    	return (List<Contact>) Database.query(
+                queryFactory
+                .setCondition('email IN :emailList')
+                .toSOQL()
+        );
+    }    
 }

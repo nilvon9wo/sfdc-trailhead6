@@ -1,0 +1,6 @@
+<aura:component >
+    <lightning:input aura:id="field" label="First name" placeholder="First name" required="true" 
+                     minlength="5" messageWhenBadInput="Your entry must be at least 5 characters." />
+    <lightning:input aura:id="field" label="Last name" placeholder="Last name" required="true" />
+    <lightning:button aura:id="submit" type="submit" label="Submit" onclick="{!c.onClick}" />
+</aura:component>

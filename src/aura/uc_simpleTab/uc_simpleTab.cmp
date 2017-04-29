@@ -1,0 +1,3 @@
+<aura:component implements="force:appHostable">
+	<h1>Lightning Component</h1>
+</aura:component>

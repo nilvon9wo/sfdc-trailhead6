@@ -1,0 +1,3 @@
+<aura:component >
+    <lightning:avatar src="/images/codey.jpg" alternativeText="Codey Bear" />
+</aura:component>

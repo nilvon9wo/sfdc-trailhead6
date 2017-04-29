@@ -9,7 +9,7 @@
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Contact_List</name>
+        <name>th6__Contact_List</name>
         <type>CustomTab</type>
     </appMenuItems>
     <appMenuItems>
@@ -21,7 +21,7 @@
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Field_Sales_App</name>
+        <name>th6__Field_Sales_App</name>
         <type>CustomTab</type>
     </appMenuItems>
     <appMenuItems>
@@ -39,6 +39,10 @@
     <appMenuItems>
         <name>Reports</name>
         <type>StandardAppMenuItem</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>th6__Simple</name>
+        <type>CustomTab</type>
     </appMenuItems>
     <appMenuItems>
         <name>Search</name>

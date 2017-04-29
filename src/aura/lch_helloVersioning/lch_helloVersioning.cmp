@@ -1,0 +1,8 @@
+<aura:component >
+	<aura:if isTrue="{!Version > 1.0}">
+        <c:lch_newVersionFunctionality />
+        <aura:set attribute="else">
+            <c:lch_oldVersionFunctionality />
+        </aura:set>
+    </aura:if>
+</aura:component>

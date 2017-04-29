@@ -1,0 +1,5 @@
+<aura:component >
+    <aura:attribute name="myVal" type="String" />
+    <lightning:inputRichText value="{!v.myVal}">
+    </lightning:inputRichText>
+</aura:component>

@@ -358,6 +358,11 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>PartnerAccountId</fullName>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Percent_Completed__c</fullName>
         <externalId>false</externalId>
         <formula>(TODAY() - DATEVALUE(CreatedDate))

@@ -1,0 +1,17 @@
+<apex:page >
+	<apex:includeLightning />
+	<div id="lightning" ></div>
+	<script>
+		$Lightning.use('c:uc_ltngComp4vfTest', function (){
+			var options = {
+				label: 'Press Me!'
+			}; 
+		
+			$Lightning.createComponent('ui:button', options, 'lightning', buttonHandler);
+			
+			function buttonHandler() {
+				// TODO: do something
+			}
+		}); 
+	</script>
+</apex:page>
